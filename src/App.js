@@ -1,4 +1,5 @@
 import logo from './logo.svg';
+import PageOne from './pages/page-one/index'
 import './App.css';
 
 function App() {
@@ -18,6 +19,10 @@ function App() {
           Learn React
         </a>
       </header>
+
+      <main>
+        <PageOne />
+      </main>
     </div>
   );
 }
