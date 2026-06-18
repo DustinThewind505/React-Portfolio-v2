@@ -79,10 +79,10 @@ time,
 mark,
 audio,
 video {
-  margin: 0;
-  padding: 0;
   border: 0;
   font-size: 62.5%;
+  margin: 0;
+  padding: 0;
   vertical-align: baseline;
 }
 html,
@@ -166,21 +166,22 @@ time,
 mark,
 audio,
 video {
-  margin: 0;
-  padding: 0;
   border: 0;
   font-size: 62.5%;
+  margin: 0;
+  padding: 0;
   vertical-align: baseline;
 }
 
 * {
+  border: 0;
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
-	border: 0;
 }
 
 .App {
+  background-color: #3c434a;
   text-align: center;
 }
 
@@ -197,17 +198,14 @@ video {
 
 .App-header {
   background-color: #282c34;
+  color: white;
+  font-size: calc(10px + 2vmin);
   min-height: 100vh;
+
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
 }
 
 @keyframes App-logo-spin {
@@ -218,3 +216,27 @@ video {
     transform: rotate(360deg);
   }
 }
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+  
+    section {
+      display: flex;
+      justify-content: space-evenly;
+    }
+
+    section a:hover {
+      color: dodgerblue;
+    }
+
+    .cursive {
+      font-size: 4rem;
+      font-family: 'Satisfy', cursive;
+      font-weight: bold;
+    }
+  }
